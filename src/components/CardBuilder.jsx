@@ -2,18 +2,20 @@ import Card from "./Card";
 import contacts from "../contacts";
 
 function CardBuilder(){
-        for(let i=0; i<contacts.length; i++){
-            return (
-                <Card
-                name={contacts[i].name}
-                active={contacts[i].active}
-                imgUrl={contacts[i].imgUrl}
-                imgAlt={contacts[i].imgAlt}
-                brieffing={contacts[i].brieffing}
-                 />
-            )
-        }
-    return
+    const theBuilded = contacts.map(object=>{
+        return(
+            <Card
+                key={object.id}
+                id={object.id}
+                name={object.name}
+                active={object.active}
+                imgUrl={object.imgUrl}
+                imgAlt={object.imgAlt}
+                brieffing={object.brieffing}
+            />
+        )
+    })
+    return theBuilded
 }
 
 export default CardBuilder

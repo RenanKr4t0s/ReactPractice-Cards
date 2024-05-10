@@ -1,10 +1,12 @@
 import Avatar from "./Avatar";
+import Details from "./Details";
 
 function Card (props){
     return(       
         <div>
             <div className="card">
                 <div className="top">
+                    <p>{props.id}</p>
                     <h2 className="name">{props.name}</h2>
                    <Avatar 
                         imgUrl={props.imgUrl}
@@ -12,8 +14,8 @@ function Card (props){
                    />
                 </div>
                 <div className="bottom">
-                    <p className="info">{props.active}</p>
-                    <p className="info">{props.brieffing}</p>
+                    <Details text={props.active} />
+                    <Details text={props.brieffing} />
                 </div>
             </div>
         </div>

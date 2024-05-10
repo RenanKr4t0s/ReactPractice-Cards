@@ -1,25 +1,17 @@
 
-import Card from "./Card";
 import CardBuilder from "./CardBuilder"
-import contacts from "../contacts";
+import Avatar from "./Avatar";
 
 console.log();
 function App (){
     return(       
         <div>
         <h1 className="heading">Bateristas do Slipknot</h1>
-        <Card
-        name={contacts[0].name}
-        active={contacts[0].active}
-        imgUrl={contacts[0].imgUrl}
-        imgAlt={contacts[0].imgAlt}
-        brieffing={contacts[0].brieffing}
-         />
-
-         {/* Deixei aqui embaixo um princípio de CardBuilder que quero ainda conseguir resolver */}
+        <Avatar 
+            imgAlt="Logo do Slipknot"
+            imgUrl="https://cdn10.bigcommerce.com/s-yhxhf/products/3294/images/4098/a207916145d3811109efa4_m__03573.1407542314.300.300.png?c=2"
+        />
          <CardBuilder />
-
-
         </div>
     );
 };
