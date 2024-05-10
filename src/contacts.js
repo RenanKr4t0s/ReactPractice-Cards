@@ -22,14 +22,6 @@ const contacts = [
         imgUrl:'https://odia.ig.com.br/_midias/jpg/2024/02/27/1200x1920/1_snapinsta_app_414849719_18410685016021302_6423456729735030290_n_1080-32137429.jpg',
         imgAlt : 'Foto do Eloy Casagrande',
         brieffing:"Ex Baterista do Sepultura e Glória"
-    },
-    {
-        id:"a04",
-        name:"Renan Ramos",
-        active:'Ativo: próxima gen da Banda',
-        imgUrl:'https://www.renandevramos.com.br/Assets/Main.svg',
-        imgAlt : 'Foto do Renan',
-        brieffing:"Ex Baterista da Hack Marfin, compositor e multiinstrumentista"
     }
 ];
 
